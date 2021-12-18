@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Dao.UserMapper">
+    <select id="getUserList" resultType="com.Entity.User">
+        select *
+        from film.user
+    </select>
+
+    <select id="getUserById" resultType="com.Entity.User">
+        select *
+        from film.user
+        where id = #{id}
+    </select>
+
+    <insert id="insertUser" parameterType="com.Entity.User">
+        insert into film.user (username, paw, tele, email)
+        values (#{username}, #{paw}, #{tele}, #{email})
+    </insert>
+
+    <update id="upUser" parameterType="com.Entity.User">
+        update film.user
+        set username = #{username},
+            tele     = #{tele},
+            email    = #{email}
+        where id = #{id}
+    </update>
+    <update id="uppaw" parameterType="com.Entity.User">
+        update film.user
+        set paw=#{paw}
+        where id = #{id}
+    </update>
+
+</mapper>
