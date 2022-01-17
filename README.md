@@ -9,6 +9,7 @@ maven管理依赖
 修改resources文件夹下的db.properties里的数据库用户名和密码
 
 部分截图：
+
 ![image](https://user-images.githubusercontent.com/66931047/149720556-5d583a7b-c724-4cec-a1a3-85925cc16248.png)
 ![image](https://user-images.githubusercontent.com/66931047/149720561-e022eb51-a90c-4a1b-a9a8-44959db501a4.png)
 ![image](https://user-images.githubusercontent.com/66931047/149720566-ee53fc02-d6cf-4d4c-a370-f221b89a96e8.png)
